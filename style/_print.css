@@ -1,0 +1,304 @@
+/**
+ * Print
+ * Layout A4 équilibré 2 pages
+ */
+
+@media print {
+  /* Reset global */
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Annuler les animations */
+  section,
+  ul li {
+    opacity: 1;
+    transform: none;
+  }
+
+  body {
+    display: block;
+    color: var(--color-dark);
+    font-size: 8px;
+    line-height: 1.2;
+    padding: 5mm;
+  }
+
+  /* Header compact */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3mm;
+    padding: 0;
+  }
+
+  #alternance,
+  #dC {
+    font-size: 14px;
+  }
+
+  .mediascreen768 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5mm;
+  }
+
+  .designLeft {
+    flex: 0 0 30%;
+    display: block;
+  }
+
+  .containerPositionement {
+    flex: 1;
+    display: block;
+    text-align: right;
+    padding: 0;
+  }
+
+  .header-info {
+    font-size: 8px;
+    margin: 1px 0;
+    line-height: 1.2;
+  }
+
+  .txt_separateur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+}
+
+.txt_separateur::before {
+  display: none;
+}
+
+.txt_separateur::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 77px;
+  margin-top: 1mm;
+  background: linear-gradient(to left, transparent, var(--color-green));
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.designLeft {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.designLeft > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#premierTrait {
+  display: block;
+  height: 1px;
+  width: 100px;
+  background: linear-gradient(to right, transparent, var(--color-green));
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+  #projetAv {
+    font-size: 12px;
+  }
+
+  #designColor {
+    font-size: 12px;
+  }
+
+  /* Durée visible */
+  .disponibiteAdroite {
+    display: block;
+    margin-top: 1mm;
+  }
+
+  .disponibiteAdroite dt,
+  .disponibiteAdroite dd {
+    font-size: 14px;
+  }
+
+  /* Main content */
+  main {
+    display: block;
+  }
+
+  article.mediascreen {
+    display: flex;
+    flex-direction: row;
+    gap: 5mm;
+  }
+
+  .itemsLeft {
+    flex: 0 0 30%;
+    display: block;
+  }
+
+  .itemsCenter {
+    flex: 1;
+    display: block;
+  }
+
+  /* Études */
+  #etudes-float {
+    display: block;
+  }
+
+  #etudes-float li {
+    text-align: left;
+    border: none;
+    padding: 1px 0;
+  }
+
+  /* Masquer */
+  .itemsRight,
+  #ePortfolio,
+  .DisponibiliteCache,
+  .date-marker,
+  .spacer-separator,
+  footer {
+    display: none;
+  }
+
+  /* Image */
+  img {
+    width: 155px;
+    height: auto;
+    margin: 0 0 2mm;
+  }
+
+  /* Typo - Titre principal */
+  h1.txt-inline {
+    font-size: 20px;
+    margin: 0;
+    white-space: normal;
+  }
+
+  #dA3z {
+    display: inline;
+    font-size: 20px;
+  }
+
+  /* SOUS-TITRES HARMONISÉS */
+  h2,
+  .legend,
+  .devStage-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 3mm 0 1mm;
+    text-indent: 0;
+  }
+
+  /* Textes orange */
+  #positionnement {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  #emailAdresse,
+  #telNum {
+    font-size: 7px;
+  }
+
+  a {
+    font-size: 7px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    font-size: 7px;
+    line-height: 1.2;
+    margin-left: 5px;
+    margin-bottom: 0;
+  }
+
+  p, dd, dt, span {
+    font-size: 7px;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .italic {
+    font-size: 6px;
+  }
+
+  .devStage-title .italic {
+    font-size: 12px;
+  }
+
+  /* Contact */
+  .info-contact {
+    font-size: 6px;
+    margin: 1mm 0;
+    gap: 1mm;
+  }
+
+  .info-contact dl {
+    margin: 0;
+  }
+
+  .info-contact dd {
+    margin: 0 0 1mm 0;
+  }
+
+  .sgeographique {
+    font-size: 8px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  #IndL, .tel, .email {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    font-size: 7px;
+    margin: 1px 0;
+  }
+
+  .in-surlinkdl i, .tel i, .email i {
+    font-size: 7px;
+  }
+
+  /* Sections expériences */
+  #typoExpoProSecond,
+  #typoExpoProThird,
+  #autreExpérience {
+    display: block;
+    margin: 1mm 0;
+  }
+
+  aside {
+    display: block;
+  }
+
+  /* Bloc encadré */
+  .bloc-encadre {
+    padding: 1mm;
+    margin: 1mm 0;
+  }
+
+  /* Pagination */
+  h1, h2 {
+    page-break-after: avoid;
+  }
+
+  /* Espaceur invisible */
+  .spacer-separator {
+    display: block;
+    height: 1px;
+    margin: 2mm auto;
+  }
+}

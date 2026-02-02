@@ -1,0 +1,364 @@
+/**
+ * Bloc / Layout
+ * Structure de la page et sections
+ */
+
+/* Header - Alignement */
+.designLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mediascreen768 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Positionnement / Stage */
+.containerPositionement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.header-info {
+  font-size: var(--fs-subtitle);
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+#positionnement {
+  margin-top: 27px;
+  color: var(--color-orange);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#stage,
+#alternance {
+  font-weight: var(--fw-normal);
+}
+
+#dC {
+  color: var(--color-green);
+  font-weight: 100;
+  font-style: italic;
+}
+
+#devDev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  font-weight: normal;
+  font-size: var(--fs-body);
+  letter-spacing: 1px;
+  line-height: 1.3rem;
+  margin-bottom: 17px;
+}
+
+/* Article - Sections principales */
+.itemsRight {
+  color: orange;
+  display: none;
+}
+
+/* Traits décoratifs */
+#premierTrait {
+  margin: -27px auto;
+  height: 1px;
+  width: 211px;
+  background: linear-gradient(to right, transparent, var(--color-green));
+}
+
+/* Web Design - En-tête */
+#projetAv {
+  margin-top: 33px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: var(--fs-subtitle);
+  font-family: var(--heading-font), var(--main-font), sans-serif;
+}
+
+#designColor {
+  color: var(--color-green);
+  font-size: var(--fs-subtitle);
+  font-weight: 100;
+}
+
+.txt_separateur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt_separateur::before,
+.txt_separateur::after {
+  content: "";
+  height: 2px;
+  border-radius: 5px;
+  width: 77px;
+}
+
+.txt_separateur::after {
+  margin-right: 55px;
+  margin-left: 7%;
+  background: linear-gradient(to left, transparent, var(--color-green));
+}
+
+/* Nom - Identité */
+#dA3z {
+  color: var(--color-orange);
+  font-weight: 300;
+}
+
+/* Photo de profil */
+img {
+  margin-top: 11px;
+  width: 222px;
+  border-radius: 17px;
+  box-shadow: 1px 1px 0 var(--color-white);
+  margin: auto;
+}
+
+/* ePortfolio */
+#ePortfolio {
+  text-align: center;
+  -webkit-appearance: none;
+}
+
+#ePortfolio .btnHover {
+  display: inline-block;
+  cursor: pointer;
+  color: var(--color-white);
+  margin: 17px auto;
+  font-weight: bolder;
+  font-size: var(--fs-body);
+  background-color: rgba(108, 117, 125, 0.49);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 7px;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  transition: transform 0.1s;
+}
+
+#ePortfolio .btnHover:hover {
+  background-color: var(--color-white);
+  color: var(--color-green);
+  font-weight: bold;
+  transform: scale(1.1);
+  will-change: transform;
+}
+
+/* Icônes sociales / Contact */
+.in-surlinkdl {
+  color: var(--color-blue);
+  font-size: var(--fs-body);
+}
+
+.in-surlinkdl i,
+.tel i,
+.email i {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: var(--fs-subtitle);
+  background: var(--color-white);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.in-surlinkdl i, .email i {
+  color: var(--color-blue);
+}
+
+.tel i {
+  color: var(--color-orange);
+}
+
+.email i {
+  border-radius: 1px;
+}
+
+#IndL,
+.tel,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#IndL {
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 17px;
+}
+
+.tel {
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 17px;
+}
+
+.email {
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 17px;
+}
+
+#emailAdresse,
+#telNum {
+  color: var(--color-blue);
+  cursor: pointer;
+  margin: 0;
+  font-size: var(--fs-body);
+}
+
+/* Listes personnalisées */
+ul li {
+  list-style-type: none;
+  display: list-item;
+  margin-left: 15px;
+  font-size: var(--fs-body);
+}
+
+#typoEtudes li::before,
+#typoCompLing li::before,
+#typoExpoPro li::before,
+#typoDepuis li::before {
+  color: var(--color-green);
+  margin-right: 10px;
+}
+
+#typoEtudes li::before {
+  content: '♣';
+  font-size: var(--fs-body);
+}
+
+#typoCompLing li::before {
+  content: '✔';
+  font-size: var(--fs-body);
+}
+
+#typoExpoPro li::before {
+  content: '✦';
+  font-size: var(--fs-body);
+}
+
+#typoDepuis li::before {
+  content: '✦';
+  font-size: var(--fs-body);
+  line-height: 1.5;
+}
+
+/* Section Études */
+#etudes-float li {
+  text-align: right;
+  list-style-type: none;
+  padding: 7px;
+  line-height: 1.3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.txt-inline #linguistiques {
+  text-align: center;
+}
+
+/* Infos de contact (Address) */
+.info-contact {
+  font-family: var(--body-font);
+  font-size: var(--fs-body);
+  color: var(--color-white);
+  line-height: 1.5;
+  margin: 1rem 0;
+  letter-spacing: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-contact dl {
+  margin: 0;
+  padding: 0;
+  white-space: pre-line;
+}
+
+.info-contact dt {
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.info-contact .sgeographique {
+  display: block;
+  font-weight: bold;
+  font-size: var(--fs-subtitle);
+  margin-bottom: 0.5rem;
+  color: var(--color-gray-light);
+}
+
+.info-contact dd {
+  text-align: left;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  white-space: pre-line;
+  font-size: var(--fs-body);
+  line-height: 1.2;
+}
+
+/* Typographie spécifique sections */
+.mediascreen p {
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+#typoExpoPro,
+#typoDepuis,
+#typoExpoProSecond {
+  font-family: var(--body-font);
+  font-size: var(--fs-body);
+  font-weight: normal;
+  gap: 1.5rem;
+  line-height: 1.5;
+}
+
+#typoExpoProSecond strong {
+  font-family: var(--body-font);
+  font-size: var(--fs-body);
+  font-weight: bolder;
+}
+
+#autreExpérience #grasCuisinier {
+  font-family: var(--body-font);
+}
+
+#grasCuisinier {
+  font-weight: bolder;
+}
+
+/* Bloc encadré */
+.bloc-encadre {
+  border-left: 3px solid var(--color-green);
+  box-shadow: 0 2px 8px rgba(164, 198, 57, 0.3);
+  padding: 1rem;
+  margin: 1rem 0;
+}

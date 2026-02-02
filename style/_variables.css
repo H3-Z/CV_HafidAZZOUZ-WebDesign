@@ -1,0 +1,63 @@
+/**
+ * Variables globales CSS
+ * Polices, tailles, couleurs, breakpoints
+ */
+
+:root {
+  /* Polices */
+  --main-font: "Helvetica", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --body-font: 'Baskervville', 'EB Garamond', serif;
+
+  /* Tailles de police fixes (base 16px) */
+  --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-17: 1.0625rem;
+  --fs-18: 1.125rem;
+  --fs-19: 1.1875rem;
+  --fs-20: 1.25rem;
+  --fs-21: 1.3125rem;
+  --fs-22: 1.375rem;
+  --fs-23: 1.4375rem;
+  --fs-24: 1.5rem;
+  --fs-25: 1.5625rem;
+
+  /* Échelle typographique responsive (clamp) */
+  --fs-body: clamp(0.875rem, 1.2vw, 1.125rem);
+  --fs-subtitle: clamp(1rem, 1.5vw, 1.25rem);
+  --fs-title: clamp(1.3125rem, 2vw, 1.5625rem);
+
+  /* Poids de police */
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
+
+  /* Couleurs */
+  --color-white: #F5F7F0;
+  --color-dark: #192201;
+  --color-orange: orange;
+  --color-blue: #00A0DC;
+  --color-green: #A4C639;
+  --color-gray-light: #9CA396;
+
+  /* Breakpoints */
+  --mobile-sm: 320px;
+  --mobile: 390px;
+  --mobile-lg: 440px;
+  --tablet-sm: 744px;
+  --tablet: 834px;
+  --tablet-lg: 1024px;
+  --desktop-sm: 1280px;
+  --desktop: 1440px;
+  --desktop-lg: 1728px;
+  --desktop-xl: 1920px;
+
+  /* Base */
+  --font-size-base: 14px;
+  --transition-speed: 0.3s;
+}

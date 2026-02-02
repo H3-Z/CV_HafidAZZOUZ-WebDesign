@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!--
+      CV Hafid AZZOUZ
+      Structure : Header, Main (Article), Footer
+      CSS : Variables → Normalize → Reset → Base → Bloc → Utilities → Responsive → Advanced
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CV de Hafid AZZOUZ - Développeur Web en recherche d'alternance CDA. Compétences : Laravel, React, PHP, JavaScript. Disponible fin mars 2026."
+    />
+
+    <title>CV Hafid AZZOUZ</title>
+
+    <!-- Google Fonts - Baskervville -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/_variables.css" />
+    <link rel="stylesheet" href="style/_normalize.css" />
+    <link rel="stylesheet" href="style/_reset.css" />
+    <link rel="stylesheet" href="style/_baseDesign.css" />
+    <link rel="stylesheet" href="style/_bloc.css" />
+    <link rel="stylesheet" href="style/_utilities.css" />
+    <link rel="stylesheet" href="style/_responsive.css" />
+    <link rel="stylesheet" href="style/_advancedDesign.css" />
+
+    <!-- En Prod uniquement -->
+    <!-- <link rel="stylesheet" href="style/main.min.css" /> -->
+
+    <link rel="stylesheet" href="style/_print.css" media="print" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- JS -->
+    <script src="script/mains.js" defer></script>
+  </head>
+  <body class="wrapper">
+    <!-- HEADER : Identité + Positionnement recherché -->
+    <header>
+      <div class="mediascreen768">
+        <!-- Bloc gauche : Nom + Trait décoratif -->
+        <div class="design designLeft">
+          <div>
+            <h1 class="txt-inline">
+              Hafid
+              <span class="txt-inline" id="dA3z">AZZOUZ</span>
+            </h1>
+            <span id="premierTrait"></span>
+          </div>
+          <div class="txt_separateur">
+            <span id="projetAv" class="txt-inline">
+              Web
+              <span class="txt-inline" id="designColor">Design</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Bloc droit : Recherche alternance -->
+        <section class="containerPositionement">
+          <div class="designStageAdroite">
+            <p id="positionnement" class="header-info">Recherche Alternance</p>
+            <p id="alternance" class="header-info">
+              CDA (Concepteur Développeur d'Applications)
+            </p>
+            <p class="header-info" id="dC">
+              1 semaine CCI Formation / 3 semaines en entreprise
+            </p>
+          </div>
+          <dl class="disponibiteAdroite">
+            <dt><p>Durée</p></dt>
+            <dd class="header-info">10 mois, à partir de fin mars</dd>
+          </dl>
+        </section>
+      </div>
+    </header>
+
+    <!-- MAIN : Contenu principal -->
+    <main>
+      <article class="mediascreen">
+        <!-- Section gauche : Photo, Contact, Études -->
+        <section class="design itemsLeft">
+          <picture>
+            <source
+              srcset="img/Hafid AZZOUZ CCI-V FDWWM.webp"
+              type="image/webp"
+            />
+            <img
+              src="img/Hafid AZZOUZ CCI-V FDWWM.jpg"
+              alt="Photo de profil de Hafid AZZOUZ"
+              width="222"
+              height="333"
+              fetchpriority="high"
+            />
+          </picture>
+          <div id="ePortfolio">
+            <a
+              href="https://ha3z.myportfolio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="btnHover">ePortfolio</span>
+            </a>
+          </div>
+
+          <!-- LinkedIn -->
+          <div id="IndL">
+            <div class="in-surlinkdl" id="icons">
+              <a
+                href="https://www.linkedin.com/in/hafid-azzouz"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Profil LinkedIn de Hafid AZZOUZ"
+              >
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="in-surlinkdl">LinkedIn</div>
+          </div>
+
+          <!-- Téléphone -->
+          <div class="tel">
+            <i class="fa-solid fa-square-phone" aria-hidden="true"></i>
+            <a href="tel:+33646261320" id="telNum">06 46 26 13 20</a>
+          </div>
+
+          <!-- Email -->
+          <div class="email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <a id="emailAdresse" href="mailto:ha3z@outlook.fr" title="Envoyer un email à Hafid">
+              ha3z@outlook.fr
+            </a>
+          </div>
+          
+          <!-- Adresses -->
+          <address class="info-contact">
+            <dl>
+              <dt><span class="sgeographique">à Valence</span></dt>
+              <dd>
+                17 rue Daniel Defoe<br />
+                Valence<br />
+                26000
+              </dd>
+              <dt><span class="sgeographique">à Paris</span></dt>
+              <dd>
+                BP 08 Étage 6<br />
+                84 rue Jean Jaurès<br />
+                Vanves<br />
+                92170
+              </dd>
+            </dl>
+          </address>
+
+          <!-- Disponibilité mobile -->
+          <dl class="DisponibiliteCache">
+            <dt>
+              <p>Durée</p>
+            </dt>
+            <dd class="italic header-info">
+              1 semaine CCI Formation / 3 semaines en entreprise
+            </dd>
+          </dl>
+
+          <!-- Études + Langues -->
+          <section class="txt-inline" id="etudes-float">
+            <h2 class="legend">Études</h2>
+            <ul id="typoEtudes">
+              <li>
+                <p class="txt-inline">
+                  FORMATION au CCI Drôme,
+                  <strong class="devStage-title"
+                    >Développement Web et Web Mobile :</strong
+                  >
+                </p>
+                <p class="txt-inline italic">Validée en janv. 2026</p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  FORMATION Elephorm en ligne, Formations diverses aux logiciels
+                  d'Adobe : graphique, photographie et vidéo
+                </p>
+                <p class="txt-inline italic">depuis août 2014</p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  IBN Nogent-Sur-Marne (94) Langues Bibliques,
+                </p>
+                <p class="txt-inline italic">2010 - 2014</p>
+              </li>
+              <li>
+                <p class="txt-inline">EPOC, Alger, Algérie Infographie,</p>
+                <p class="txt-inline italic">2001 &amp; 2005</p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  Lycée Amar Toumi, Tigzirt, Algérie Série Lettres, Certificat
+                  de fin d'études
+                </p>
+                <p class="txt-inline italic">1996 - 1998</p>
+              </li>
+            </ul>
+
+            <h2 class="legend">Compétences linguistiques</h2>
+            <ul id="typoCompLing">
+              <li>
+                <p class="txt-inline">Français courant</p>
+              </li>
+              <li>
+                <p class="txt-inline">Anglais intermédiaire</p>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Section centrale : Expériences -->
+        <section class="design itemsCenter">
+          <section class="txt-inline">
+            <h2 class="legend">Compétences Techniques</h2>
+
+            <h2 class="devStage-title">Development Web & Mobile</h2>
+            <ul id="typoExpoPro">
+              <li>
+                <p class="txt-inline">
+                  <strong>Langages : </strong>HTML, CSS (SCSS), JavaScript, PHP,
+                  SQL
+                </p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  <strong>Frameworks : </strong>Bootstrap, Tailwind, Symfony,
+                  Laravel, React
+                </p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  <strong>Environnement & Outils : </strong>IDE - Visual Studio
+                  Code, Versioning Git (local) & GitHub (cloud) & GitLab,
+                  Docker, Bases de données & Serveur : PhpMyAdmin, MySQL
+                  Workbench, Server Apache (Wamp), MySQL (SGBDR)
+                </p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  <strong>Méthodologies : </strong>Agile (SCRUM via Trello),
+                  Figma (Maquetage)
+                </p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  <strong>Optimisation : </strong>SEO (Search Engine
+                  Optimization)
+                </p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  <strong>Qualité & Conformité Web : </strong>RGPD,
+                  Accessibilité Web, Éco-conception
+                </p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  <strong>CMS : </strong>WordPress et autres solutions No-Code
+                </p>
+              </li>
+            </ul>
+            <div class="spacer-separator" aria-hidden="true"></div>
+
+            <!-- Stage Strasbourg -->
+             <div class="bloc-encadre">
+            <h2 class="devStage-title">
+              Stage effectué à Strasbourg
+              <span class="txt-inline italic"
+                >- du 1er sept. au 28 oct. 2025</span
+              >
+            </h2>
+            <ul id="typoExpoPro">
+              <li>
+                <p class="txt-inline">
+                  Conception et réalisation d'une application de gestion
+                  d'abonnés pour Portes Ouvertes France
+                </p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  <strong>Stack : </strong>Laravel 12, Starter Kit, Flux UI,
+                  SCSS, Docker (WSL)
+                </p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  <strong>Architecture : </strong>MVC + (SRP/DRY), Pattern
+                  Repository, Mapper, etc
+                </p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  <strong>Conformité : </strong>RGPD, Accessibilité WCAG, SEO
+                </p>
+              </li>
+            </ul>
+            </div>
+
+            <div class="spacer-separator" aria-hidden="true"></div>
+
+            <!-- Autres expériences numériques -->
+            <h2 class="legend">Autre expérience dans le numérique :</h2>
+            <ul id="typoExpoPro">
+              <li>
+                <p class="txt-inline">
+                  Gestion du Centre d'Administration M 365 et du parc
+                  informatique, JPC France -
+                </p>
+                <p class="txt-inline italic">depuis Octobre 2022</p>
+                <p class="txt-inline">à ce jour (et bénévole au même poste</p>
+                <p class="txt-inline italic">depuis Août 2023)</p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  Utilisation des outils No-Code tels que Notion, Jotform et
+                  Typeform
+                </p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  Reportage photo de mariage, évènementiel et photo d'entreprise
+                  (association)
+                </p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  Réalisation de vidéo et montage sur DaVinci-Résolve
+                </p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  Traitement photo-vidéo sur Eizo Moniteur ColorEdge, game CG
+                </p>
+              </li>
+            </ul>
+
+            <!-- Depuis 2002 -->
+            <h2 class="legend">Depuis 2002 à ce jour :</h2>
+            <ul id="typoDepuis">
+              <li>
+                <p class="txt-inline">
+                  Conception de jaquettes CD et livret CD,
+                </p>
+                <p class="txt-inline italic">2017, 2015, 2011 et 2010</p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  Conception de brochures, affiches et flyers
+                </p>
+              </li>
+              <li>
+                <p class="txt-inline">
+                  Création de l'application iPhone Radio Gospel avec K-Love,
+                </p>
+                <p class="txt-inline italic">2010</p>
+              </li>
+            </ul>
+
+            <div>
+              <h2>
+                Maîtrise des logiciels graphiques : Adobe Illustrator, InDesign
+                et Photoshop …
+              </h2>
+            </div>
+          </section>
+
+          <!-- Expériences graphiste -->
+          <section class="txt-inline" id="typoExpoProSecond">
+            <p class="txt-inline">
+              <strong>Graphiste, </strong>Imprimerie Arc-en-Ciel ; Tizi-Ouzou -
+            </p>
+            <p class="txt-inline italic">2008 - 2009</p>
+            <p>
+              Supervision et réalisation de projets publicitaires et d'édition,
+              de la conception jusqu'à la finition.
+            </p>
+            <p class="txt-inline">
+              <strong>Graphiste-Photographe indépendant ;</strong> Tizi-Ouzou -
+            </p>
+            <p class="txt-inline italic">2004 - 2009</p>
+            <p>
+              Réalisation de projets graphiques sur divers supports. Photographe
+              polyvalent.
+            </p>
+            <p class="txt-inline">
+              <strong>Graphiste, </strong>Edition Science et Vie ; Alger -
+            </p>
+            <p class="txt-inline italic">2004 - 2005</p>
+            <p>Supervision et conception d'ouvrages pour enfants.</p>
+          </section>
+
+          <!-- Freelance -->
+          <section class="txt-inline" id="typoExpoProThird">
+            <h2 class="legend" id="freelance">En freelance</h2>
+            <p class="txt-inline">
+              Atelier collaboratif - Rencontre entre artistes -
+            </p>
+            <p class="txt-inline italic">2006</p>
+            <p class="txt-inline">
+              et réalisation de livret « Tigzirt Poésie locale »
+            </p>
+            <p class="txt-inline italic">2008</p>
+            <p class="txt-inline">
+              Réalisation de cartes postales pour la région de Tigzirt,
+            </p>
+            <p class="txt-inline italic">2004, 2005 et 2006</p>
+          </section>
+
+          <!-- Autre expérience -->
+          <section>
+            <aside id="autreExpérience">
+              <h2 class="legend">Autre expérience</h2>
+              <div class="txt-inline">
+                <p class="txt-inline" id="grasCuisinier">Cuisinier en chef,</p>
+                <p class="txt-inline">Centre JPC France ; Montmeyran -</p>
+                <p class="txt-inline italic">Déc. 2014 à juillet 2023</p>
+              </div>
+            </aside>
+          </section>
+        </section>
+
+        <!-- Section droite : Timeline -->
+        <section class="itemsRight">
+          <aside class="daTrait" id="timeline-container">
+            <p id="dateAc" class="date-label">2026</p>
+            <div id="deuxiemeTrait" class="timeline-line"></div>
+            <p id="dateDeb" class="date-label">2000</p>
+            <p id="dateM" class="date-label">2023</p>
+          </aside>
+        </section>
+      </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <!-- Pied de page éventuel -->
+    </footer>
+  </body>
+</html>

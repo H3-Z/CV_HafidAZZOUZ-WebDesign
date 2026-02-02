@@ -1,0 +1,51 @@
+/**
+ * Utilities
+ * Classes utilitaires réutilisables
+ */
+
+.txt-inline {
+  display: inline;
+}
+
+.italic {
+  display: inline;
+  font-style: italic;
+  font-family: var(--body-font);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-light);
+  color: var(--color-gray-light);
+}
+
+p.italic.txt-inline {
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  font-style: italic;
+  text-align: justify;
+  color: var(--color-gray-light);
+  margin: 0.5rem 1rem;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+}
+
+.icon-class {
+  margin-right: 8px;
+}
+
+.sgeographique {
+  font-family: var(--main-font), var(--heading-font), sans-serif;
+  font-size: var(--fs-subtitle);
+  line-height: 1.9;
+  color: var(--color-gray-light);
+}
+
+/* Disponibilité - Affichage conditionnel */
+.disponibiteAdroite {
+  display: none;
+}
+
+.DisponibiliteCache {
+  /* Visible par défaut en mobile */
+}

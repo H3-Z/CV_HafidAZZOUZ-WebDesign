@@ -1,0 +1,54 @@
+/**
+ * Advanced Design
+ * Animations, transitions, effets visuels
+ */
+
+/* Timeline Markers */
+.date-marker {
+  opacity: 0.1;
+  transform: translateX(-20px);
+  transition: opacity 0.5s var(--transition-speed), transform 0.5s var(--transition-speed);
+  font-size: 0.9rem;
+  color: var(--color-green);
+  position: absolute;
+}
+
+/* Animations listes */
+ul li {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+ul li.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+ul li:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations sections */
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Symboles dynamiques listes */
+#typoEtudes li::before,
+#typoCompLing li::before,
+#typoExpoPro li::before,
+#typoDepuis li::before {
+  content: var(--dynamic-content, '✦');
+  color: #A4C639;
+  margin-right: 10px;
+  font-size: 1rem;
+}

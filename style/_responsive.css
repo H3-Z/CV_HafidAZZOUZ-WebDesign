@@ -1,0 +1,334 @@
+/**
+ * Media Queries responsive
+ * Mobile-first : 320px → 1920px
+ */
+
+/* Mobile First (320px) */
+@media screen and (min-width: 320px) {
+  * {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Small screens (426px) */
+@media screen and (min-width: 426px) {
+  article,
+  #autreExpérience,
+  header {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* Tablet (768px) */
+@media screen and (min-width: 768px) {
+  article,
+  #autreExpérience,
+  header {
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+
+  .mediascreen768 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .design {
+    flex: 1;
+  }
+
+  .designLeft {
+    flex: 1;
+    text-align: left;
+    margin: 0;
+    padding: 1rem;
+    max-width: 300px;
+    align-content: flex-start;
+  }
+
+  .designRight {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .mediascreen {
+    flex-direction: row;
+    gap: 33px;
+  }
+
+  .design .itemsLeft {
+    justify-content: flex-start;
+  }
+
+  .itemsLeft {
+    flex-grow: 1;
+  }
+
+  .itemsCenter {
+    gap: 10px;
+    line-height: 1.5rem;
+    flex-grow: 2;
+  }
+
+  #photoFolio img {
+    margin-top: 17px;
+    float: right;
+  }
+
+  .info-contact {
+    float: right;
+    margin-top: 0;
+    text-align: right;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  dt .sgeographique {
+    margin: 0;
+    margin-top: 0.75rem;
+  }
+
+  #ePortfolio {
+    margin-top: 9px;
+  }
+
+  #devDev {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  dl {
+    margin-top: 1rem;
+  }
+
+  dl,
+  dt,
+  dd {
+    text-align: right;
+  }
+
+  .containerPositionement {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mediascreen p {
+    text-align: justify;
+    padding: 1rem;
+  }
+
+  p.italic.txt-inline {
+    text-align: left;
+    margin: 0.5rem;
+  }
+
+  .disponibiteAdroite {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .DisponibiliteCache {
+    display: none;
+  }
+
+  #freelance {
+    line-height: 4rem;
+  }
+}
+
+/* Desktop (1024px) */
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+  }
+
+  article,
+  #autreExpérience {
+    margin: 10px;
+  }
+
+  .mediascreen {
+    flex-direction: row;
+    gap: 33px;
+  }
+
+  .itemsLeft {
+    flex-grow: 3;
+    flex: 1;
+    min-width: 277px;
+  }
+
+  .itemsCenter {
+    gap: 10px;
+    line-height: 1.5rem;
+    flex-grow: 11;
+    flex: 3;
+  }
+
+  .itemsRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  html,
+  body,
+  .itemsRight,
+  .daTrait {
+    height: 100%;
+  }
+
+  #deuxiemeTrait {
+    flex: 1;
+    width: 0.3vh;
+    background: linear-gradient(to bottom, transparent, var(--color-green));
+    align-self: stretch;
+  }
+
+  .itemsRight .daTrait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .itemsRight #deuxiemeTrait {
+    height: 100vh;
+    width: 0.3vh;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, transparent, var(--color-green));
+    border-radius: 3px;
+  }
+
+  .timeline-container {
+    height: 100vh;
+  }
+
+  #dateAc {
+    transform: rotate(90deg);
+    margin-bottom: 0;
+    color: var(--color-green);
+  }
+
+  #dateDeb {
+    transform: rotate(90deg);
+    margin-top: 0;
+    color: var(--color-green);
+  }
+
+  #troisiemeTrait,
+  #dateM {
+    display: none;
+  }
+
+  main {
+    display: contents;
+  }
+}
+
+/* Large Desktop (1440px) */
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 10px 50px;
+  }
+
+  article,
+  #autreExpérience,
+  header {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .mediascreen {
+    gap: 50px;
+  }
+
+  .itemsLeft {
+    max-width: 320px;
+    margin: 0;
+  }
+
+  .designRight,
+  .containerPositionement {
+    padding: 1rem 2rem;
+  }
+
+  .info-contact dt,
+  .info-contact dd {
+    margin-left: 1.5rem;
+  }
+
+  h1.txt-inline {
+    font-size: clamp(2rem, 3vw, 3rem);
+  }
+
+  p.italic.txt-inline {
+    font-style: italic;
+    color: var(--color-gray-light);
+  }
+}
+
+/* Ultra-large (1920px) */
+@media screen and (min-width: 1920px) {
+  body {
+    padding: 20px 120px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  header,
+  article,
+  #autreExpérience {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .mediascreen {
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  .itemsLeft {
+    max-width: 400px;
+    margin: 0;
+  }
+
+  .itemsCenter {
+    padding: 1rem 2.5rem;
+  }
+
+  h1.txt-inline {
+    font-size: clamp(2.2rem, 2.7vw, 3.3rem);
+  }
+}
+
+/* Print */
+/* @media print {
+  body {
+    color: var(--color-dark);
+  }
+  
+  .itemsRight,
+  #ePortfolio,
+  #premierTrait,
+  .txt_separateur::after {
+    display: none;
+  }
+} */
